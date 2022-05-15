@@ -21,10 +21,10 @@ RUN make
 WORKDIR /libelfmaster/examples
 
 ## TODO: ADD YOUR BUILD INSTRUCTIONS HERE.
-RUN gcc -O2 -g checksec.c ../src/libelfmaster.a -o checksec
+RUN gcc -O2 -g elfparse.c ../src/libelfmaster.a -o elfparse
 
 #Package Stage
 FROM --platform=linux/amd64 ubuntu:20.04
 
 ## TODO: Change <Path in Builder Stage>
-COPY --from=builder /libelfmaster/examples/checksec /
+COPY --from=builder /libelfmaster/examples/elfparse /

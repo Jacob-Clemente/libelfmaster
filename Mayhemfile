@@ -1,5 +1,5 @@
-project: checksec
-target: checksec
+project: libelfmaster
+target: elfparse
 
 cmds:
-  - cmd: /checksec @@
+  - cmd: /elfparse @@
