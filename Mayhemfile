@@ -1,0 +1,5 @@
+project: checksec
+target: checksec
+
+cmds:
+  - cmd: /checksec @@
